@@ -22,6 +22,22 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Description)
         </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Students)
+        </dt>
+        <dd class="col-sm-10">
+            @foreach(var students in Model.Students)
+            {
+            <dl class="row">
+                <dt class="col-4">
+                    @students.Name
+                </dt>
+                <dt class="col-4">
+                    @students.Surname
+                </dt>
+            </dl>
+            }
+        </dd>
     </dl>
 </div>
 <div>
