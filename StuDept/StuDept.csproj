@@ -6,6 +6,96 @@
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Remove="wwwroot\about.html" />
+    <Content Remove="wwwroot\blog.html" />
+    <Content Remove="wwwroot\contact.html" />
+    <Content Remove="wwwroot\css\bootstrap.css" />
+    <Content Remove="wwwroot\css\font-awesome.css" />
+    <Content Remove="wwwroot\css\style.css" />
+    <Content Remove="wwwroot\fonts\fontawesome-webfont.eot" />
+    <Content Remove="wwwroot\fonts\fontawesome-webfont.svg" />
+    <Content Remove="wwwroot\fonts\fontawesome-webfont.ttf" />
+    <Content Remove="wwwroot\fonts\fontawesome-webfont.woff" />
+    <Content Remove="wwwroot\fonts\fontawesome-webfont.woff2" />
+    <Content Remove="wwwroot\fonts\FontAwesome.otf" />
+    <Content Remove="wwwroot\gallery.html" />
+    <Content Remove="wwwroot\images\2.jpg" />
+    <Content Remove="wwwroot\images\blog1.jpg" />
+    <Content Remove="wwwroot\images\blog2.jpg" />
+    <Content Remove="wwwroot\images\blog3.jpg" />
+    <Content Remove="wwwroot\images\c1.jpg" />
+    <Content Remove="wwwroot\images\g1.jpg" />
+    <Content Remove="wwwroot\images\g2.jpg" />
+    <Content Remove="wwwroot\images\g3.jpg" />
+    <Content Remove="wwwroot\images\g4.jpg" />
+    <Content Remove="wwwroot\images\s1.jpg" />
+    <Content Remove="wwwroot\images\s2.jpg" />
+    <Content Remove="wwwroot\images\s3.jpg" />
+    <Content Remove="wwwroot\images\s4.jpg" />
+    <Content Remove="wwwroot\images\s5.jpg" />
+    <Content Remove="wwwroot\images\s6.jpg" />
+    <Content Remove="wwwroot\images\s7.jpg" />
+    <Content Remove="wwwroot\images\t1.jpg" />
+    <Content Remove="wwwroot\images\t2.jpg" />
+    <Content Remove="wwwroot\images\t3.jpg" />
+    <Content Remove="wwwroot\images\tab1.jpg" />
+    <Content Remove="wwwroot\images\tab2.jpg" />
+    <Content Remove="wwwroot\images\tab3.jpg" />
+    <Content Remove="wwwroot\images\tab4.jpg" />
+    <Content Remove="wwwroot\images\tab5.jpg" />
+    <Content Remove="wwwroot\images\tab6.jpg" />
+    <Content Remove="wwwroot\images\tab7.jpg" />
+    <Content Remove="wwwroot\images\tab8.jpg" />
+    <Content Remove="wwwroot\index.html" />
+    <Content Remove="wwwroot\single.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\about.html" />
+    <None Include="wwwroot\blog.html" />
+    <None Include="wwwroot\contact.html" />
+    <None Include="wwwroot\css\bootstrap.css" />
+    <None Include="wwwroot\css\font-awesome.css" />
+    <None Include="wwwroot\css\style.css" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.eot" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.ttf" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.woff" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\fonts\FontAwesome.otf" />
+    <None Include="wwwroot\gallery.html" />
+    <None Include="wwwroot\images\2.jpg" />
+    <None Include="wwwroot\images\blog1.jpg" />
+    <None Include="wwwroot\images\blog2.jpg" />
+    <None Include="wwwroot\images\blog3.jpg" />
+    <None Include="wwwroot\images\c1.jpg" />
+    <None Include="wwwroot\images\g1.jpg" />
+    <None Include="wwwroot\images\g2.jpg" />
+    <None Include="wwwroot\images\g3.jpg" />
+    <None Include="wwwroot\images\g4.jpg" />
+    <None Include="wwwroot\images\s1.jpg" />
+    <None Include="wwwroot\images\s2.jpg" />
+    <None Include="wwwroot\images\s3.jpg" />
+    <None Include="wwwroot\images\s4.jpg" />
+    <None Include="wwwroot\images\s5.jpg" />
+    <None Include="wwwroot\images\s6.jpg" />
+    <None Include="wwwroot\images\s7.jpg" />
+    <None Include="wwwroot\images\t1.jpg" />
+    <None Include="wwwroot\images\t2.jpg" />
+    <None Include="wwwroot\images\t3.jpg" />
+    <None Include="wwwroot\images\tab1.jpg" />
+    <None Include="wwwroot\images\tab2.jpg" />
+    <None Include="wwwroot\images\tab3.jpg" />
+    <None Include="wwwroot\images\tab4.jpg" />
+    <None Include="wwwroot\images\tab5.jpg" />
+    <None Include="wwwroot\images\tab6.jpg" />
+    <None Include="wwwroot\images\tab7.jpg" />
+    <None Include="wwwroot\images\tab8.jpg" />
+    <None Include="wwwroot\index.html" />
+    <None Include="wwwroot\single.html" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
