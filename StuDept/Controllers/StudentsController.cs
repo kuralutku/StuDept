@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -13,10 +16,12 @@ namespace StuDept.Controllers
     public class StudentsController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly IHostingEnvironment _hostingEnvironment;
 
-        public StudentsController(ApplicationDbContext context)
+        public StudentsController(ApplicationDbContext context, IHostingEnvironment hostingEnvironment)
         {
             _context = context;
+            _hostingEnvironment = hostingEnvironment;
         }
 
         // GET: Students
@@ -57,8 +62,17 @@ namespace StuDept.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Surname,DepartmentId")] Student student)
+        public async Task<IActionResult> Create([Bind("Id,Name,Surname,DepartmentId")] Student student, IFormFile FileUrl)
         {
+            string dirPath = Path.Combine(_hostingEnvironment.WebRootPath, @"\uploads\");
+            var fileName = Guid.NewGuid().ToString().Replace("-", "") + "_" + FileUrl.FileName;
+            using (var fileStream = new FileStream(dirPath+fileName, FileMode.Create))
+            {
+                await FileUrl.CopyToAsync(fileStream);
+            }
+
+            //student.pPhoto = fileName;
+
             if (ModelState.IsValid)
             {
                 _context.Add(student);
