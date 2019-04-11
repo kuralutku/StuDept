@@ -16,5 +16,6 @@ namespace StuDept.Data
 
         public DbSet<Student> Students { get; set; }
         public DbSet<Department> Departments { get; set; }
+        public DbSet<StuDept.Models.Auth> Auth { get; set; }
     }
 }
